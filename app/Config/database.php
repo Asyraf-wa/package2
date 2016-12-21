@@ -71,8 +71,8 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => '',
-		'database' => 'workshop',
+		'password' => 'dbPassword',
+		'database' => 'dbName',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
