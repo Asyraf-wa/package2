@@ -15,15 +15,17 @@ Our primary goal is to provide a structured framework that enables PHP users at 
 [Qr Helper](https://github.com/muxe/cakePHP-QR-Code-Helper) - QR Code Helper by Muxe
 
 ## Jquery
-[jquery.datetimepicker](https://github.com/xdan/datetimepicker) - JQuery DatePicker<br />
-[Search](http://www.cakephp.org) - Search Plugin by CakeDC<br />
-[Search](http://www.cakephp.org) - Search Plugin by CakeDC<br />
-[Search](http://www.cakephp.org) - Search Plugin by CakeDC<br />
-[Search](http://www.cakephp.org) - Search Plugin by CakeDC<br />
-[Search](http://www.cakephp.org) - Search Plugin by CakeDC<br />
+[Jquery](http://www.cakephp.org) - jquery-1.11.3 engine<br />
+[Date Time Picker](https://github.com/xdan/datetimepicker) - Datetime picker<br />
+[Clock Picker](https://github.com/weareoutman/clockpicker) - Clock face timepicker<br />
+[CKEditor](http://ckeditor.com/) - CKEditor for textbox<br />
+[Easy Pie Chart](https://github.com/rendro/easy-pie-chart) - EasyPieChart with Easing Effect<br />
+[Password Meter](https://github.com/jreesuk/jquery-entropizer) - Password Meter by jquery-entropizer<br />
+[Morphext](https://github.com/MrSaints/Morphext) - A jQuery plugin for creating text-based carousels, rotating small or large pieces of text one after the other<br />
+[Animate](http://www.cakephp.org) - Morphtext Dependency<br />
 
 ## Theme & Icon
-[Bootstrap 3](http://getbootstrap.com) - Bootstrap Theme
+[Bootstrap 3](http://getbootstrap.com) - Bootstrap Theme<br />
 [Font Awesome](http://fontawesome.io) - Font Awesome Icon
 
 ## Contributing
