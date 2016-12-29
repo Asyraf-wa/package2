@@ -1,17 +1,15 @@
 # CakePHP
-
-[![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
-
 CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
 Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
 
-
 ## Plugins Included
 
-[Search](http://www.cakephp.org) - The rapid development PHP framework
-
-[Upload](http://book.cakephp.org) - THE CakePHP user documentation; start learning here!
-
+[Search](http://www.cakephp.org) - Search Plugin by CakeDC
+[Upload](http://book.cakephp.org) - Upload plugin by josegonzalez
+[DebugKit] (https://github.com/cakephp/debug_kit/tree/2.2) - Debug Toolbar for CakePHP applications
+[Captcha](https://github.com/inimist/cakephp-captcha) - Captcha plugin to control spam by inimist.com
+[UserPermissions](https://github.com/AlessandroMinoccheri/UserPermissions/tree/cakephp2.0) - Access Control by AlessandroMinoccheri
+[CakePDF](https://github.com/FriendsOfCake/CakePdf/tree/1.0) - PDF generator by FriendsOfCake
 
 ## Helper Included
 
@@ -23,6 +21,11 @@ Our primary goal is to provide a structured framework that enables PHP users at 
 
 [Roadmaps](https://github.com/cakephp/cakephp/wiki#roadmaps) - Want to contribute? Get involved!
 
+## Jquery
+
+## Theme & Icon
+[Bootstrap 3](http://getbootstrap.com) - Bootstrap Theme
+[Font Awesome](http://fontawesome.io) - Font Awesome Icon
 
 ## Contributing
 
