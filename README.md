@@ -12,7 +12,7 @@ Our primary goal is to provide a structured framework that enables PHP users at 
 [CakePDF](https://github.com/FriendsOfCake/CakePdf/tree/1.0) - PDF generator by FriendsOfCake
 
 ## Helper Included
-
+[Qr Helper](https://github.com/muxe/cakePHP-QR-Code-Helper) - QR Code Helper by Muxe
 
 ## Jquery
 
