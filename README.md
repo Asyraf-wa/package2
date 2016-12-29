@@ -4,22 +4,15 @@ Our primary goal is to provide a structured framework that enables PHP users at 
 
 ## Plugins Included
 
-[Search](http://www.cakephp.org) - Search Plugin by CakeDC
-[Upload](http://book.cakephp.org) - Upload plugin by josegonzalez
-[DebugKit] (https://github.com/cakephp/debug_kit/tree/2.2) - Debug Toolbar for CakePHP applications
-[Captcha](https://github.com/inimist/cakephp-captcha) - Captcha plugin to control spam by inimist.com
-[UserPermissions](https://github.com/AlessandroMinoccheri/UserPermissions/tree/cakephp2.0) - Access Control by AlessandroMinoccheri
+[Search](http://www.cakephp.org) - Search Plugin by CakeDC<br />
+[Upload](http://book.cakephp.org) - Upload plugin by josegonzalez<br />
+[DebugKit] (https://github.com/cakephp/debug_kit/tree/2.2) - Debug Toolbar for CakePHP applications<br />
+[Captcha](https://github.com/inimist/cakephp-captcha) - Captcha plugin to control spam by inimist.com<br />
+[UserPermissions](https://github.com/AlessandroMinoccheri/UserPermissions/tree/cakephp2.0) - Access Control by AlessandroMinoccheri<br />
 [CakePDF](https://github.com/FriendsOfCake/CakePdf/tree/1.0) - PDF generator by FriendsOfCake
 
 ## Helper Included
 
-[#cakephp](http://webchat.freenode.net/?channels=#cakephp) on irc.freenode.net - Come chat with us, we have cake
-
-[Google Group](https://groups.google.com/group/cake-php) - Community mailing list and forum
-
-[GitHub Issues](https://github.com/cakephp/cakephp/issues) - Got issues? Please tell us!
-
-[Roadmaps](https://github.com/cakephp/cakephp/wiki#roadmaps) - Want to contribute? Get involved!
 
 ## Jquery
 
