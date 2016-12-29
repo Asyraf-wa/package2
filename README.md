@@ -15,6 +15,12 @@ Our primary goal is to provide a structured framework that enables PHP users at 
 [Qr Helper](https://github.com/muxe/cakePHP-QR-Code-Helper) - QR Code Helper by Muxe
 
 ## Jquery
+[jquery.datetimepicker](https://github.com/xdan/datetimepicker) - JQuery DatePicker<br />
+[Search](http://www.cakephp.org) - Search Plugin by CakeDC<br />
+[Search](http://www.cakephp.org) - Search Plugin by CakeDC<br />
+[Search](http://www.cakephp.org) - Search Plugin by CakeDC<br />
+[Search](http://www.cakephp.org) - Search Plugin by CakeDC<br />
+[Search](http://www.cakephp.org) - Search Plugin by CakeDC<br />
 
 ## Theme & Icon
 [Bootstrap 3](http://getbootstrap.com) - Bootstrap Theme
