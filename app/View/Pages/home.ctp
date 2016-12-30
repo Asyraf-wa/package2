@@ -1,3 +1,16 @@
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+				<h1><i class="fa fa-bars" aria-hidden="true"></i> <?php echo __('Package II'); ?></h1>
+			</div>
+		</div>
+	</div>
+	
+<div class="row">
+  <div class="col-md-8">
+<div class="panel panel-default">
+  <div class="panel-heading">Framework Status</div>
+  <div class="panel-body">
 <?php
 /**
  * @link          http://cakephp.org CakePHP(tm) Project
@@ -26,9 +39,9 @@ endif;
 <p>
 <?php
 if (version_compare(PHP_VERSION, '5.2.8', '>=')):
-	echo '<span class="alert alert-success">';
+	echo '<font color="#5cb85c"><i class="fa fa-check-square-o" aria-hidden="true"></i> ';
 		echo __d('cake_dev', 'Your version of PHP is 5.2.8 or higher.');
-	echo '</span>';
+	echo '</font>';
 else:
 	echo '<span class="alert alert-warning">';
 		echo __d('cake_dev', 'Your version of PHP is too low. You need PHP 5.2.8 or higher to use this Framework.');
@@ -39,9 +52,9 @@ endif;
 <p>
 	<?php
 	if (is_writable(TMP)):
-		echo '<span class="alert alert-success">';
+		echo '<font color="#5cb85c"><i class="fa fa-check-square-o" aria-hidden="true"></i> ';
 			echo __d('cake_dev', 'Your tmp directory is writable.');
-		echo '</span>';
+		echo '</font>';
 	else:
 		echo '<span class="alert alert-danger">';
 			echo __d('cake_dev', 'Your tmp directory is NOT writable.');
@@ -53,9 +66,9 @@ endif;
 	<?php
 	$settings = Cache::settings();
 	if (!empty($settings)):
-		echo '<span class="alert alert-success">';
+		echo '<font color="#5cb85c"><i class="fa fa-check-square-o" aria-hidden="true"></i> ';
 			echo __d('cake_dev', 'The %s is being used for core caching. To change the config edit %s', '<em>' . $settings['engine'] . 'Engine</em>', 'APP/Config/core.php');
-		echo '</span>';
+		echo '</font>';
 	else:
 		echo '<span class="alert alert-danger">';
 			echo __d('cake_dev', 'Your cache is NOT working. Please check the settings in %s', 'APP/Config/core.php');
@@ -67,10 +80,10 @@ endif;
 	<?php
 	$filePresent = null;
 	if (file_exists(APP . 'Config' . DS . 'database.php')):
-		echo '<span class="alert alert-success">';
+		echo '<font color="#5cb85c"><i class="fa fa-check-square-o" aria-hidden="true"></i> ';
 			echo __d('cake_dev', 'Your database configuration file is present.');
 			$filePresent = true;
-		echo '</span>';
+		echo '</font>';
 	else:
 		echo '<span class="alert alert-danger">';
 			echo __d('cake_dev', 'Your database configuration file is NOT present.');
@@ -99,15 +112,15 @@ if (isset($filePresent)):
 	<p>
 		<?php
 			if ($connected && $connected->isConnected()):
-				echo '<span class="alert alert-success">';
+				echo '<font color="#5cb85c"><i class="fa fa-check-square-o" aria-hidden="true"></i> ';
 					echo __d('cake_dev', 'Framework is able to connect to the database.');
-				echo '</span>';
+				echo '</font>';
 			else:
-				echo '<span class="alert alert-danger">';
+				echo '<font color="#d9534f"><i class="fa fa-minus-square-o" aria-hidden="true"></i> ';
 					echo __d('cake_dev', 'Framework is NOT able to connect to the database.');
-					echo '<br /><br />';
+					echo '<br />';
 					echo $errorMsg;
-				echo '</span>';
+				echo '</font>';
 			endif;
 		?>
 	</p>
@@ -123,6 +136,62 @@ if (!Validation::alphaNumeric('cakephp')):
 	echo '</span></p>';
 endif;
 ?>
+  </div>
+</div>  
+  </div>
+  <div class="col-md-4">
+<div class="panel panel-default">
+  <div class="panel-heading">Control Panel</div>
+  <div class="panel-body">
+					<div class="form-group">
+<center>
+<div class="btn-group btn-group-justified" role="group" aria-label="...">					
+  <div class="btn-group" role="group">
+<?php echo $this->Form->button('<i class="glyphicon glyphicon-ok"></i>'.__(' Submit'), array(
+    'type' => 'submit', 
+    'class' => 'btn btn-success', 
+    'escape' => false
+));
+?>
+</div>
+  <div class="btn-group" role="group">
+<?php echo $this->Html->link('<i class="glyphicon glyphicon-refresh"></i> ' .__('Reset'), 
+	array('controller' => 'applications', 'action' => 'add'),
+	array('class'=>'btn btn-warning',  'escape' => false)); 
+?>
+</div>
+  <div class="btn-group" role="group">
+<?php echo $this->Html->link('<i class="glyphicon glyphicon-remove"></i> ' .__('Cancel'), 
+	array('controller' => 'pages', 'action' => 'dashboard'),
+	array('class'=>'btn btn-danger',  'escape' => false)); 
+?>
+</div>
+</center>
+<?php echo $this->Form->end() ?>
+					</div>
+
+				</div>
+  </div>
+</div>  
+  </div>
+  
+  
+ <div class="row">
+  <div class="col-md-8">
+  <div class="panel panel-default">
+  <div class="panel-heading">Read Me</div>
+  <div class="panel-body">
+Changes & Updates: <a href="https://github.com/Asyraf-wa/package2" target="_blank">Click Here</a><br>
+
+  </div>
+</div>
+  </div>
+</div> 
+  
+  
+</div>
+
+
 
 
 <p>

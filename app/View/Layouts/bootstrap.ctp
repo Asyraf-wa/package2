@@ -35,7 +35,7 @@
     <![endif]-->
 
     <style type="text/css">
-    	body{ padding: 20px 0px; }
+    	body{ padding-top: 50px; }
     </style>
 
   </head>
@@ -50,6 +50,29 @@
 
 			<?php echo $this->fetch('content'); ?>
 
+			
+<hr>
+
+
+<div class="roboto_footer">
+
+  <p class="text-center">
+<?php echo $this->Html->image('logo_cdp.png', array('alt' => 'Code The Pixel', 'width'=>'50px')); ?><br>  
+Code The Pixel<br>
+	
+	Customized by The Informatic Trooper (ITrooper) || Code The Pixel Inc.<br>
+	<SCRIPT LANGUAGE="JavaScript">
+    today=new Date();
+    y0=today.getFullYear();
+    </SCRIPT>
+    Copyright &copy; 2016-<SCRIPT LANGUAGE="JavaScript">
+    document.write(y0);
+    </SCRIPT> PackageII. All rights reserved. [Ver 1.0] <br>
+	IP: <?php echo $this->request->clientIp(); ?> | Load: <?php echo round(microtime(true) - TIME_START, 3); ?>
+  
+  </p>
+</div>				
+			
     </div><!-- /.container -->
 
   </body>
