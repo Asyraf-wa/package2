@@ -20,14 +20,17 @@ Our primary goal is to provide a structured framework that enables PHP users at 
 <a href="https://gist.github.com/Asyraf-wa/34d94897d91a8a89d14fb0bbaddf1569" target="_blank">[Gist]</a><br />
 [Clock Picker](https://github.com/weareoutman/clockpicker) - Clock face timepicker
 <a href="https://gist.github.com/Asyraf-wa/464da102c0c4db7b5324f03076ad95cf" target="_blank">[Gist]</a><br />
-[CKEditor](http://ckeditor.com/) - CKEditor for textbox<br />
+[CKEditor](http://ckeditor.com/) - CKEditor for textbox
+<a href="https://gist.github.com/Asyraf-wa/6637ca18d157d6d9e12b4a8b6e3500e9" target="_blank">[Gist]</a><br />
 [Easy Pie Chart](https://github.com/rendro/easy-pie-chart) - EasyPieChart with Easing Effect
 <a href="https://gist.github.com/Asyraf-wa/2aafa9299eb48dd9aad6617def4af2eb" target="_blank">[Gist]</a><br />
 [Password Meter](https://github.com/jreesuk/jquery-entropizer) - Password Meter by jquery-entropizer 
 <a href="https://gist.github.com/Asyraf-wa/ab6ea7c7abe705625cb351373d8d5457" target="_blank">[Gist]</a><br />
-[Morphext](https://github.com/MrSaints/Morphext) - A jQuery plugin for creating text-based carousels, rotating small or large pieces of text one after the other<br />
+[Morphext](https://github.com/MrSaints/Morphext) - A jQuery plugin for creating text-based carousels, rotating small or large pieces of text one after the other
+<a href="https://gist.github.com/Asyraf-wa/b0e58d733680a64538892dda04395c77" target="_blank">[Gist]</a><br />
 [Animate](http://www.cakephp.org) - Morphtext Dependency<br />
-[Select2](https://github.com/select2/select2) - Select2 for options<br />
+[Select2](https://github.com/select2/select2) - Select2 for options
+<a href="https://gist.github.com/Asyraf-wa/cbbab90cae3753343bc7986412b89153" target="_blank">[Gist]</a><br />
 [Show Password](https://github.com/wenzhixin/bootstrap-show-password) - Show/hide password plugin for bootstrap
 <a href="https://gist.github.com/Asyraf-wa/6b99ebb8fd4b157175274d5182574755" target="_blank">[Gist]</a><br />
 
