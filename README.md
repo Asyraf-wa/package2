@@ -20,7 +20,8 @@ Our primary goal is to provide a structured framework that enables PHP users at 
 [Clock Picker](https://github.com/weareoutman/clockpicker) - Clock face timepicker<br />
 [CKEditor](http://ckeditor.com/) - CKEditor for textbox<br />
 [Easy Pie Chart](https://github.com/rendro/easy-pie-chart) - EasyPieChart with Easing Effect<br />
-[Password Meter](https://github.com/jreesuk/jquery-entropizer) - Password Meter by jquery-entropizer<br />
+[Password Meter](https://github.com/jreesuk/jquery-entropizer) - Password Meter by jquery-entropizer 
+<a href="https://gist.github.com/Asyraf-wa/ab6ea7c7abe705625cb351373d8d5457">[T]</a><br />
 [Morphext](https://github.com/MrSaints/Morphext) - A jQuery plugin for creating text-based carousels, rotating small or large pieces of text one after the other<br />
 [Animate](http://www.cakephp.org) - Morphtext Dependency<br />
 [Select2](https://github.com/select2/select2) - Select2 for options<br />
