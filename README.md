@@ -25,7 +25,8 @@ Our primary goal is to provide a structured framework that enables PHP users at 
 [Morphext](https://github.com/MrSaints/Morphext) - A jQuery plugin for creating text-based carousels, rotating small or large pieces of text one after the other<br />
 [Animate](http://www.cakephp.org) - Morphtext Dependency<br />
 [Select2](https://github.com/select2/select2) - Select2 for options<br />
-[Show Password](https://github.com/wenzhixin/bootstrap-show-password) - Show/hide password plugin for bootstrap<br />
+[Show Password](https://github.com/wenzhixin/bootstrap-show-password) - Show/hide password plugin for bootstrap
+<a href="https://gist.github.com/Asyraf-wa/6b99ebb8fd4b157175274d5182574755" target="_blank">[Gist]</a><br />
 
 ## Theme & Icon
 [Bootstrap 3](http://getbootstrap.com) - Bootstrap Theme<br />
