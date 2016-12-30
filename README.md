@@ -16,10 +16,13 @@ Our primary goal is to provide a structured framework that enables PHP users at 
 
 ## Jquery
 [Jquery](http://www.cakephp.org) - jquery-1.11.3 engine<br />
-[Date Time Picker](https://github.com/xdan/datetimepicker) - Datetime picker<br />
-[Clock Picker](https://github.com/weareoutman/clockpicker) - Clock face timepicker<br />
+[Date Time Picker](https://github.com/xdan/datetimepicker) - Datetime picker
+<a href="https://gist.github.com/Asyraf-wa/34d94897d91a8a89d14fb0bbaddf1569" target="_blank">[Gist]</a><br />
+[Clock Picker](https://github.com/weareoutman/clockpicker) - Clock face timepicker
+<a href="https://gist.github.com/Asyraf-wa/464da102c0c4db7b5324f03076ad95cf" target="_blank">[Gist]</a><br />
 [CKEditor](http://ckeditor.com/) - CKEditor for textbox<br />
-[Easy Pie Chart](https://github.com/rendro/easy-pie-chart) - EasyPieChart with Easing Effect<br />
+[Easy Pie Chart](https://github.com/rendro/easy-pie-chart) - EasyPieChart with Easing Effect
+<a href="https://gist.github.com/Asyraf-wa/2aafa9299eb48dd9aad6617def4af2eb" target="_blank">[Gist]</a><br />
 [Password Meter](https://github.com/jreesuk/jquery-entropizer) - Password Meter by jquery-entropizer 
 <a href="https://gist.github.com/Asyraf-wa/ab6ea7c7abe705625cb351373d8d5457" target="_blank">[Gist]</a><br />
 [Morphext](https://github.com/MrSaints/Morphext) - A jQuery plugin for creating text-based carousels, rotating small or large pieces of text one after the other<br />
