@@ -66,9 +66,9 @@
 				}
 
 				echo "\t\t\t\t\t\t<td class=\"actions\">\n";
-				echo "\t\t\t\t\t\t\t<?php echo \$this->Html->link('<span class=\"glyphicon glyphicon-search\"></span>', array('action' => 'view', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class'=>'btn btn-success btn-xs', 'escape' => false)); ?>\n";
-				echo "\t\t\t\t\t\t\t<?php echo \$this->Html->link('<span class=\"glyphicon glyphicon-edit\"></span>', array('action' => 'edit', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class'=>'btn btn-warning btn-xs', 'escape' => false)); ?>\n";
-				echo "\t\t\t\t\t\t\t<?php echo \$this->Form->postLink('<span class=\"glyphicon glyphicon-remove\"></span>', array('action' => 'delete', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class'=>'btn btn-danger btn-xs', 'escape' => false), __('Are you sure you want to delete # %s?', \${$singularVar}['{$modelClass}']['{$primaryKey}'])); ?>\n";
+				echo "\t\t\t\t\t\t\t<?php echo \$this->Html->link('<i class=\"fa fa-folder-open-o\" aria-hidden=\"true\"></i>', array('action' => 'view', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class'=>'btn btn-success btn-xs', 'escape' => false)); ?>\n";
+				echo "\t\t\t\t\t\t\t<?php echo \$this->Html->link('<i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i>', array('action' => 'edit', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class'=>'btn btn-warning btn-xs', 'escape' => false)); ?>\n";
+				echo "\t\t\t\t\t\t\t<?php echo \$this->Form->postLink('<i class=\"fa fa-trash-o\" aria-hidden=\"true\"></i>', array('action' => 'delete', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class'=>'btn btn-danger btn-xs', 'escape' => false), __('Are you sure you want to delete # %s?', \${$singularVar}['{$modelClass}']['{$primaryKey}'])); ?>\n";
 				echo "\t\t\t\t\t\t</td>\n";
 			echo "\t\t\t\t\t</tr>\n";
 
@@ -112,14 +112,14 @@
 					<div class="panel-heading">Actions</div>
 						<div class="panel-body">
 							
-								<?php echo "<?php echo \$this->Html->link(__('<span class=\"glyphicon glyphicon-plus\"></span>&nbsp;&nbsp;New " . $singularHumanName . "'), array('action' => 'add'), array('class'=>'btn btn-primary btn-block', 'escape' => false)); ?>"; ?>
+								<?php echo "<?php echo \$this->Html->link(__('<i class=\"fa fa-plus\" aria-hidden=\"true\"></i>&nbsp;&nbsp;New " . $singularHumanName . "'), array('action' => 'add'), array('class'=>'btn btn-primary btn-block', 'escape' => false)); ?>"; ?>
 						<?php
 							$done = array();
 							foreach ($associations as $type => $data) {
 								foreach ($data as $alias => $details) {
 									if ($details['controller'] != $this->name && !in_array($details['controller'], $done)) {
-										echo "\t\t<?php echo \$this->Html->link(__('<span class=\"glyphicon glyphicon-list\"></span>&nbsp;&nbsp;List " . Inflector::humanize($details['controller']) . "'), array('controller' => '{$details['controller']}', 'action' => 'index'), array('class'=>'btn btn-warning btn-block', 'escape' => false)); ?> \n";
-										echo "\t\t<?php echo \$this->Html->link(__('<span class=\"glyphicon glyphicon-plus\"></span>&nbsp;&nbsp;New " . Inflector::humanize(Inflector::underscore($alias)) . "'), array('controller' => '{$details['controller']}', 'action' => 'add'), array('class'=>'btn btn-primary btn-block', 'escape' => false)); ?> \n";
+										echo "\t\t<?php echo \$this->Html->link(__('<i class=\"fa fa-list\" aria-hidden=\"true\"></i>&nbsp;&nbsp;List " . Inflector::humanize($details['controller']) . "'), array('controller' => '{$details['controller']}', 'action' => 'index'), array('class'=>'btn btn-warning btn-block', 'escape' => false)); ?> \n";
+										echo "\t\t<?php echo \$this->Html->link(__('<i class=\"fa fa-plus\" aria-hidden=\"true\"></i>&nbsp;&nbsp;New " . Inflector::humanize(Inflector::underscore($alias)) . "'), array('controller' => '{$details['controller']}', 'action' => 'add'), array('class'=>'btn btn-primary btn-block', 'escape' => false)); ?> \n";
 										$done[] = $details['controller'];
 									}
 								}
