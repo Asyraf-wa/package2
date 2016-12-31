@@ -141,30 +141,31 @@ endif;
   </div>
   <div class="col-md-4">
 <div class="panel panel-default">
-  <div class="panel-heading">Control Panel</div>
+  <div class="panel-heading">Reference Links</div>
   <div class="panel-body">
 					<div class="form-group">
 <center>
 <div class="btn-group btn-group-justified" role="group" aria-label="...">					
   <div class="btn-group" role="group">
-<?php echo $this->Form->button('<i class="glyphicon glyphicon-ok"></i>'.__(' Submit'), array(
-    'type' => 'submit', 
-    'class' => 'btn btn-success', 
-    'escape' => false
-));
-?>
+<?php echo $this->Html->link(
+    'CakePHP',
+    'http://book.cakephp.org/2.0/en/index.html',
+    array('class' => 'btn btn-danger', 'target' => '_blank')
+); ?>
 </div>
   <div class="btn-group" role="group">
-<?php echo $this->Html->link('<i class="glyphicon glyphicon-refresh"></i> ' .__('Reset'), 
-	array('controller' => 'applications', 'action' => 'add'),
-	array('class'=>'btn btn-warning',  'escape' => false)); 
-?>
+<?php echo $this->Html->link(
+    'Bootstrap',
+    'http://getbootstrap.com/',
+    array('class' => 'btn btn-success', 'target' => '_blank')
+); ?>
 </div>
   <div class="btn-group" role="group">
-<?php echo $this->Html->link('<i class="glyphicon glyphicon-remove"></i> ' .__('Cancel'), 
-	array('controller' => 'pages', 'action' => 'dashboard'),
-	array('class'=>'btn btn-danger',  'escape' => false)); 
-?>
+<?php echo $this->Html->link(
+    'F.Awesome',
+    'http://fontawesome.io/icons/',
+    array('class' => 'btn btn-warning', 'target' => '_blank')
+); ?>
 </div>
 </center>
 <?php echo $this->Form->end() ?>
@@ -181,8 +182,15 @@ endif;
   <div class="panel panel-default">
   <div class="panel-heading">Read Me</div>
   <div class="panel-body">
-Changes & Updates: <a href="https://github.com/Asyraf-wa/package2" target="_blank">Click Here</a><br>
-
+ <ul>
+<li>Changes & Updates: <a href="https://github.com/Asyraf-wa/package2" target="_blank">Click Here</a></li>
+<li>This package is based on CakePHP Framework with additional plugin and jquery script. This package has been customized by 
+<?php echo $this->Html->link(
+    '@AsyrafWahiAnuar',
+    'http://asyraf.uitm.edu.my',
+    array('class' => 'button', 'target' => '_blank')
+); ?> for rapid web-based application development. For more information, refer GitHub link and refer the proper reference links.</li>
+</ul>
   </div>
 </div>
   </div>

@@ -36,6 +36,7 @@ Our primary goal is to provide a structured framework that enables PHP users at 
 
 ## Theme & Icon
 [Bootstrap 3](http://getbootstrap.com) - Bootstrap Theme<br />
+[Bootstrap Cosmo Theme](https://bootswatch.com/cosmo/) - Bootstrap Cosmo Theme by Bootswatch<br />
 [Font Awesome](http://fontawesome.io) - Font Awesome Icon
 
 ## Contributing

@@ -30,35 +30,11 @@
 
 
 	<div class="row">
-		<div class="col-md-3">
-			<div class="actions">
-				<div class="panel panel-default">
-					<div class="panel-heading">Actions</div>
-						<div class="panel-body">
-							<ul class="nav nav-pills nav-stacked">
 
-							<?php if (strpos($action, 'add') === false): ?>
-									<li><?php echo "<?php echo \$this->Form->postLink(__('<span class=\"glyphicon glyphicon-remove\"></span>&nbsp;&nbsp;Delete'), array('action' => 'delete', \$this->Form->value('{$modelClass}.{$primaryKey}')), array('escape' => false), __('Are you sure you want to delete # %s?', \$this->Form->value('{$modelClass}.{$primaryKey}'))); ?>"; ?></li>
-							<?php endif; ?>
-									<li><?php echo "<?php echo \$this->Html->link(__('<span class=\"glyphicon glyphicon-list\"></span>&nbsp;&nbsp;List " . $pluralHumanName . "'), array('action' => 'index'), array('escape' => false)); ?>"; ?></li>
-							<?php
-									$done = array();
-									foreach ($associations as $type => $data) {
-										foreach ($data as $alias => $details) {
-											if ($details['controller'] != $this->name && !in_array($details['controller'], $done)) {
-												echo "\t\t<li><?php echo \$this->Html->link(__('<span class=\"glyphicon glyphicon-list\"></span>&nbsp;&nbsp;List " . Inflector::humanize($details['controller']) . "'), array('controller' => '{$details['controller']}', 'action' => 'index'), array('escape' => false)); ?> </li>\n";
-												echo "\t\t<li><?php echo \$this->Html->link(__('<span class=\"glyphicon glyphicon-plus\"></span>&nbsp;&nbsp;New " . Inflector::humanize(Inflector::underscore($alias)) . "'), array('controller' => '{$details['controller']}', 'action' => 'add'), array('escape' => false)); ?> </li>\n";
-												$done[] = $details['controller'];
-											}
-										}
-									}
-							?>
-							</ul>
-						</div>
-					</div>
-				</div>			
-		</div><!-- end col md 3 -->
-		<div class="col-md-9">
+		<div class="col-md-8">
+<div class="panel panel-default">
+  <div class="panel-heading"><?php printf("<?php echo __('%s %s'); ?>", Inflector::humanize($action), $singularHumanName); ?></div>
+  <div class="panel-body">
 <?php 		echo "\t\t\t<?php echo \$this->Form->create('{$modelClass}', array('role' => 'form')); ?>\n\n"; ?>
 <?php
 		foreach ($fields as $field) {
@@ -78,14 +54,61 @@
 			}
 		}
 ?>
-<?php
-				echo "\t\t\t\t<div class=\"form-group\">\n";
-				echo "\t\t\t\t\t<?php echo \$this->Form->submit(__('Submit'), array('class' => 'btn btn-default')); ?>\n";
-				echo "\t\t\t\t</div>\n\n";
 
+  </div>
+</div>
+
+		</div><!-- end col md 8 -->
+		<div class="col-md-4">
+		
+<div class="panel panel-default">
+  <div class="panel-heading">Actions</div>
+  <div class="panel-body">
+  <div class="btn-group btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+<?php
+				
+				echo "\t\t\t\t\t<?php echo \$this->Form->button(__('<i class=\"fa fa-check\" aria-hidden=\"true\"></i>&nbsp;&nbsp;Submit'), array('class' => 'btn btn-success btn-block')); ?>\n";
+?>
+</div>
+  <div class="btn-group" role="group">
+<?php
+				echo "\t\t\t\t\t<?php echo \$this->Html->link(__('<i class=\"fa fa-times\" aria-hidden=\"true\"></i>&nbsp;&nbsp;Cancel'), array('action' => 'index'), array('class' => 'btn btn-warning btn-block', 'escape' => false)); ?>\n";
+					
+				
 			echo "\t\t\t<?php echo \$this->Form->end() ?>\n\n";
 
 ?>
-		</div><!-- end col md 12 -->
+</div>
+	</div>
+  </div>
+</div>		
+		
+		
+			<div class="actions">
+				<div class="panel panel-default">
+					<div class="panel-heading">Quick Access</div>
+						<div class="panel-body">
+
+							<?php if (strpos($action, 'add') === false): ?>
+									<?php echo "<?php echo \$this->Form->postLink(__('<span class=\"glyphicon glyphicon-remove\"></span>&nbsp;&nbsp;Delete'), array('action' => 'delete', \$this->Form->value('{$modelClass}.{$primaryKey}')), array('class'=>'btn btn-danger btn-block', 'escape' => false), __('Are you sure you want to delete # %s?', \$this->Form->value('{$modelClass}.{$primaryKey}'))); ?>"; ?>
+							<?php endif; ?>
+									<?php echo "<?php echo \$this->Html->link(__('<span class=\"glyphicon glyphicon-list\"></span>&nbsp;&nbsp;List " . $pluralHumanName . "'), array('action' => 'index'), array('class'=>'btn btn-warning btn-block', 'escape' => false)); ?>"; ?>
+							<?php
+									$done = array();
+									foreach ($associations as $type => $data) {
+										foreach ($data as $alias => $details) {
+											if ($details['controller'] != $this->name && !in_array($details['controller'], $done)) {
+												echo "\t\t<?php echo \$this->Html->link(__('<span class=\"glyphicon glyphicon-list\"></span>&nbsp;&nbsp;List " . Inflector::humanize($details['controller']) . "'), array('controller' => '{$details['controller']}', 'action' => 'index'), array('class'=>'btn btn-warning btn-block', 'escape' => false)); ?> \n";
+												echo "\t\t<?php echo \$this->Html->link(__('<span class=\"glyphicon glyphicon-plus\"></span>&nbsp;&nbsp;New " . Inflector::humanize(Inflector::underscore($alias)) . "'), array('controller' => '{$details['controller']}', 'action' => 'add'), array('class'=>'btn btn-primary btn-block', 'escape' => false)); ?> \n";
+												$done[] = $details['controller'];
+											}
+										}
+									}
+							?>
+						</div>
+					</div>
+				</div>			
+		</div><!-- end col md 4-->
 	</div><!-- end row -->
 </div>

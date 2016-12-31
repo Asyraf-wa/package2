@@ -13,25 +13,13 @@
           <ul class="nav navbar-nav">
        
             <li>
-			<?php echo $this->Html->link('<i class="glyphicon glyphicon-bookmark"></i> ' .__('Dashboard'), 
-							array('controller' => 'users', 'action' => 'dashboard'),
+			<?php echo $this->Html->link('<i class="fa fa-home" aria-hidden="true"></i> ' .__('Home'), 
+							array('controller' => 'pages', 'action' => 'dashboard'),
 							array('escape' => false)); 
 			?>
 			</li>
 
-
-
-
-
-			
           </ul>
-	  
-
-		  
-		  
-		  
-		  
-		  
 
         </div><!--/.nav-collapse -->
       </div>
