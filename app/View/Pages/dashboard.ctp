@@ -1,3 +1,4 @@
+<br>
 <style>
 #myCarousel .nav a small
 {
@@ -11,10 +12,10 @@
 {
     border-radius: 0px;
 }
-.nav-pills>li[data-slide-to="0"].active a { background-color: #2780e3; }
+.nav-pills>li[data-slide-to="0"].active a { background-color: #2577d2; }
 .nav-pills>li[data-slide-to="1"].active a { background-color: #e67e22; }
-.nav-pills>li[data-slide-to="2"].active a { background-color: #16a085; }
-.nav-pills>li[data-slide-to="3"].active a { background-color: #8e44ad; }
+.nav-pills>li[data-slide-to="2"].active a { background-color: #c33037; }
+.nav-pills>li[data-slide-to="3"].active a { background-color: #44276b; }
 </style>
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -32,10 +33,9 @@
             </div>
             <!-- End Item -->
             <div class="item">
-                <img src="http://placehold.it/1200x400/e67e22/ffffff&text=Projects">
+                <?php echo $this->Html->image('banner_b.jpg', array('alt' => 'Banner B')); ?>
                 <div class="carousel-caption">
-                    <h3>
-                        Headline</h3>
+                   
                     <p>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                         tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
@@ -44,10 +44,9 @@
             </div>
             <!-- End Item -->
             <div class="item">
-                <img src="http://placehold.it/1200x400/2980b9/ffffff&text=Portfolio">
+                <?php echo $this->Html->image('banner_c.jpg', array('alt' => 'Banner C')); ?>
                 <div class="carousel-caption">
-                    <h3>
-                        Headline</h3>
+                   
                     <p>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                         tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
@@ -56,10 +55,9 @@
             </div>
             <!-- End Item -->
             <div class="item">
-                <img src="http://placehold.it/1200x400/8e44ad/ffffff&text=Services">
+                <?php echo $this->Html->image('banner_d.jpg', array('alt' => 'Banner D')); ?>
                 <div class="carousel-caption">
-                    <h3>
-                        Headline</h3>
+                   
                     <p>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                         tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
@@ -70,13 +68,13 @@
         </div>
         <!-- End Carousel Inner -->
         <ul class="nav nav-pills nav-justified">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">About<small>Lorem
+            <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Code The Pixel<small>Lorem
                 ipsum dolor sit</small></a></li>
-            <li data-target="#myCarousel" data-slide-to="1"><a href="#">Projects<small>Lorem ipsum
+            <li data-target="#myCarousel" data-slide-to="1"><a href="#">Package II<small>Lorem ipsum
                 dolor sit</small></a></li>
-            <li data-target="#myCarousel" data-slide-to="2"><a href="#">Portfolio<small>Lorem ipsum
+            <li data-target="#myCarousel" data-slide-to="2"><a href="#">CakePHP<small>Lorem ipsum
                 dolor sit</small></a></li>
-            <li data-target="#myCarousel" data-slide-to="3"><a href="#">Services<small>Lorem ipsum
+            <li data-target="#myCarousel" data-slide-to="3"><a href="#">Bootstrap<small>Lorem ipsum
                 dolor sit</small></a></li>
         </ul>
     </div>
@@ -108,45 +106,16 @@ $(document).ready( function() {
 });
 </script>
 
-
-
 <br>
+
 <div class="row">
   <div class="col-md-8">
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <?php echo $this->Html->image('banner1.jpg', array('alt' => 'Banner1', 'width'=>'750px')); ?>
-      <div class="carousel-caption">
-        A Product of Code The Pixel by Infomatic Troopers
-      </div>
-    </div>
-    <div class="item">
-      <?php echo $this->Html->image('b2.jpg', array('alt' => 'Banner2', 'width'=>'750px')); ?>
-      <div class="carousel-caption">
-        Banner 2
-      </div>
-    </div>
+<div class="panel panel-default">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+    <?php echo $this->element('check'); ?>
   </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>  
+</div>
   </div>
   <div class="col-md-4">
   <div class="panel panel-primary">
@@ -162,6 +131,8 @@ $(document).ready( function() {
 <div class="well well-sm">
   Look, I'm in a small well!
 </div>
+
+
 
 <div class="row">
   <div class="col-md-8">

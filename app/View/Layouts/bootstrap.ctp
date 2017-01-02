@@ -20,6 +20,7 @@
 		echo $this->Html->script('bootstrap');
 		echo $this->Html->script('ckeditor/ckeditor');
 	?>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
 
   	<!-- Latest compiled and minified CSS 
   	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
@@ -49,7 +50,10 @@
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
-
+<?php echo $scripts_for_layout; ?>
+<?php
+if (class_exists('JsHelper') && method_exists($this->Js, 'writeBuffer')) echo $this->Js->writeBuffer();
+?>  
 			
 <hr>
 
@@ -57,8 +61,7 @@
 <div class="roboto_footer">
 
   <p class="text-center">
-<?php echo $this->Html->image('logo_cdp.png', array('alt' => 'Code The Pixel', 'width'=>'50px')); ?><br>  
-Code The Pixel<br>
+<?php echo $this->Html->image('logo_cdp_footer.png', array('alt' => 'Code The Pixel')); ?><br>  
 	
 	Customized by The Informatic Trooper (ITrooper) || Code The Pixel Inc.<br>
 	<SCRIPT LANGUAGE="JavaScript">
@@ -72,7 +75,8 @@ Code The Pixel<br>
   
   </p>
 </div>				
-			
+	
+		
     </div><!-- /.container -->
 
   </body>
