@@ -111,11 +111,34 @@ $(document).ready( function() {
 <div class="row">
   <div class="col-md-8">
 <div class="panel panel-default">
-  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-heading">Framework Check</div>
   <div class="panel-body">
     <?php echo $this->element('check'); ?>
   </div>
 </div>
+
+<div class="row">
+    <div class="col-sm-3 col-md-3"><?php echo $this->Html->image('sub1.jpg', array('alt' => 'Sub1', 'class'=>'img-thumbnail img-responsive')); ?></div>
+    <div class="col-sm-3 col-md-3"><?php echo $this->Html->image('sub1.jpg', array('alt' => 'Sub1', 'class'=>'img-thumbnail img-responsive')); ?></div>
+    <div class="col-sm-3 col-md-3"><?php echo $this->Html->image('sub1.jpg', array('alt' => 'Sub1', 'class'=>'img-thumbnail img-responsive')); ?></div>
+    <div class="col-sm-3 col-md-3"><?php echo $this->Html->image('sub1.jpg', array('alt' => 'Sub1', 'class'=>'img-thumbnail img-responsive')); ?></div>
+</div>
+<br>
+  <div class="panel panel-default">
+  <div class="panel-heading">Read Me</div>
+  <div class="panel-body">
+ <ul>
+<li>Changes & Updates: <a href="https://github.com/Asyraf-wa/package2" target="_blank">Click Here</a></li>
+<li>This package is based on CakePHP Framework with additional plugin and jquery script. This package has been customized by 
+<?php echo $this->Html->link(
+    '@AsyrafWahiAnuar',
+    'http://asyraf.uitm.edu.my',
+    array('class' => 'button', 'target' => '_blank')
+); ?> for rapid web-based application development. For more information, refer GitHub link and refer the proper reference links.</li>
+</ul>
+  </div>
+</div>
+
   </div>
   <div class="col-md-4">
   <div class="panel panel-primary">
@@ -125,31 +148,42 @@ $(document).ready( function() {
 	Based on CakePHP framework, Package II has been introduced by Informatic Trooper || Code The Pixel with few integration of useful plugins, Jquery script and Bootstrap theme to assist rapid development for web-based application. Taking the advantages of Cosmo Bootstrap theme, Package II are responsive-ready. This package is released under MIT license 2016.</p>
   </div>
 </div>
-  </div>
-</div>
 
-<div class="well well-sm">
-  Look, I'm in a small well!
-</div>
-
-
-
-<div class="row">
-  <div class="col-md-8">
-<div class="row">
-    <div class="col-sm-3 col-md-3"><?php echo $this->Html->image('sub1.jpg', array('alt' => 'Sub1', 'class'=>'img-thumbnail img-responsive')); ?></div>
-    <div class="col-sm-3 col-md-3"><?php echo $this->Html->image('sub1.jpg', array('alt' => 'Sub1', 'class'=>'img-thumbnail img-responsive')); ?></div>
-    <div class="col-sm-3 col-md-3"><?php echo $this->Html->image('sub1.jpg', array('alt' => 'Sub1', 'class'=>'img-thumbnail img-responsive')); ?></div>
-    <div class="col-sm-3 col-md-3"><?php echo $this->Html->image('sub1.jpg', array('alt' => 'Sub1', 'class'=>'img-thumbnail img-responsive')); ?></div>
-</div>
-  </div>
-  <div class="col-md-4">
 <div class="panel panel-default">
-  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-heading">Reference Links</div>
   <div class="panel-body">
-    Panel content
+					<div class="form-group">
+<center>
+<div class="btn-group btn-group-justified" role="group" aria-label="...">					
+  <div class="btn-group" role="group">
+<?php echo $this->Html->link(
+    'CakePHP',
+    'http://book.cakephp.org/2.0/en/index.html',
+    array('class' => 'btn btn-danger', 'target' => '_blank')
+); ?>
+</div>
+  <div class="btn-group" role="group">
+<?php echo $this->Html->link(
+    'Bootstrap',
+    'http://getbootstrap.com/',
+    array('class' => 'btn btn-success', 'target' => '_blank')
+); ?>
+</div>
+  <div class="btn-group" role="group">
+<?php echo $this->Html->link(
+    'F.Awesome',
+    'http://fontawesome.io/icons/',
+    array('class' => 'btn btn-warning', 'target' => '_blank')
+); ?>
+</div>
+</center>
+<?php echo $this->Form->end() ?>
+					</div>
+
+				</div>
   </div>
-</div>  
+</div> 
+
   </div>
 </div>
 
