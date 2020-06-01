@@ -1,4 +1,4 @@
-# DEPRECATED. This repo will be archived soon.
+# DEPRECATED. This repo has been archived.
 
 # CakePHP
 CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
